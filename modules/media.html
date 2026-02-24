@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h2>My Favorite Song</h2>
+
+    <audio controls autoplay muted preload="auto">
+      <source src="./src/eastduo.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <audio controls loop preload="metadata">
+      <source src="./src/eastduo.mp3" type="audio/mpeg" />
+      Your browser does not support the audio element.
+    </audio>
+
+    <p>Preload: none</p>
+    <audio controls preload="none">
+      <source src="./src/eastduo.mp3" type="audio/mpeg" />
+    </audio>
+
+    <p>Preload: metadata</p>
+    <audio controls preload="metadata">
+      <source src="./src/eastduo.mp3" type="audio/mpeg" />
+    </audio>
+
+    <p>Preload: auto</p>
+    <audio controls preload="auto">
+      <source src="./src/eastduo.mp3" type="audio/mpeg" />
+    </audio>
+
+    <h2>My Favorite Video</h2>
+
+    <video width="400" height="240" controls poster="./src/download.png">
+      <source src="./src/file_example_MP4.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+
+    <video
+      width="400"
+      height="240"
+      controls
+      autoplay
+      loop
+      muted
+      poster="./src/download.png"
+    >
+      <source src="./src/file_example_MP4.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <h2>Embedded Content</h2>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.youtube.com/embed/kAgWRlDDE30"
+      title="Greenland"
+      frameborder="0"
+      allowfullscreen
+    >
+    </iframe>
+    <iframe
+      width="560"
+      height="315"
+      src="https://www.google.com/maps?q=Petra,Jordan&output=embed"
+      title="Google Maps location"
+    >
+    </iframe>
+  </body>
+</html>

@@ -1,0 +1,103 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>User Registration Form</h1>
+
+    <form>
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" required /><br /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="password">Password:</label>
+      <input
+        type="password"
+        id="password"
+        name="password"
+        required
+      /><br /><br />
+
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="date of birth" required /><br /><br />
+
+      <label for="profile">Profile Picture:</label>
+      <input type="file" id="profile" name="profile" /><br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>User Preferences</h1>
+    <form>
+      <label for="aboutMe">About Me</label><br />
+      <textarea name="" id="aboutMe" rows="4" cols="40"></textarea> <br /><br />
+      <label for="country">Select Country</label><br />
+      <select name="" id="country">
+        <option value="">-- Select Country --</option>
+        <option value="jordan">Jordan</option>
+        <option value="usa">USA</option>
+        <option value="uae">UAE</option></select
+      ><br /><br />
+
+      <fieldset>
+        <legend>Contact Preference</legend>
+
+        <input type="radio" id="contact-email" name="contact" value="email" />
+        <label for="contact-email">Email</label><br />
+
+        <input type="radio" id="contact-phone" name="contact" value="phone" />
+        <label for="contact-phone">Phone</label>
+      </fieldset>
+
+      <br />
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>Submit Form</h1>
+
+    <form
+      action="https://example.com/submit"
+      method="POST"
+      target="_blank"
+      autocomplete="off"
+    >
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required />
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <h1>Survey Form</h1>
+    <form>
+      <label for="username">Username :</label>
+      <input type="text" id="Username" name="username" required /><br /><br />
+
+      <label for="age">Age :</label>
+      <input
+        type="number"
+        id="age"
+        name="age"
+        min="18"
+        max="60"
+        required
+      /><br /><br />
+      <label>Favorite Language:</label>
+      <input type="text" list="langs" />
+      <datalist id="langs">
+        <option value="HTML"></option>
+        <option value="CSS"></option>
+        <option value="JavaScript"></option>
+        <option value="Python"></option>
+      </datalist>
+      <br /><br />
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>
